@@ -6,6 +6,7 @@ body{
   margin: 60px;
   background-color: #000;
   border-radius: 5px;
+  width: 230px;
 }
 .container #result{
   color:#fff;
@@ -15,15 +16,101 @@ body{
 }
 .container form{
   display: grid;
-  gap:5px;
+ justify-content: center;
+ align-items: center;
+ gap:5px;
+  padding: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
   "result result result result"
-  ac plus-mons pourcent div
-  sept huit neuf product
-  quatre cinq six moins
-  un deux trois plus
-  zero zero point egale;
-  
+  "ac plus-mons pourcent div"
+  "sept huit neuf product"
+  "quatre cinq six moins"
+  "un deux trois plus"
+  "zero zero point egale"; 
+}
+#result{
+  grid-area:result;
+}
+.ac{
+  grid-area:ac;
+}
+.plus-mons{
+  grid-area:plus-mons;
+}
+.pourcent{
+  grid-area:pourcent;
+}
+.div{
+  grid-area:div;
+}
+ 
+.sept{
+  grid-area:sept;
+}
+.huit{
+  grid-area:huit;
+}
+.neuf{
+  grid-area:neuf;
+}
+.product{
+  grid-area:product;
+}
+.quatre{
+  grid-area:quatre;
+}
+.cinq{
+  grid-area:cinq;
+}
+.six{
+  grid-area:six;
+}
+.moins{
+  grid-area:moins;
+}
+.un{
+  grid-area:un;
+}
+.deux{
+  grid-area:deux;
+}
+.trois{
+  grid-area:trois;
+}
+.plus{
+  grid-area:plus;
+}
+.zero{
+  grid-area:zero;
+}
+.point{
+  grid-area:point;
+}
+.egale{
+  grid-area:egale;
+}
+
+.btn{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color:#fff;
+  background-color: #4a4a4a;
+  border: none;
+}
+#zero{
+  width: 100%;
+  border-radius: 90px;
+  text-align: left;
+  padding-left: 15px;
+}
+#plus,#egale,#moins,#product,#div{
+  background-color: orange;
+}
+#ac,#plus-moins,#pourcent{
+background-color: rgb(213, 213, 213);
+color:black;
 }
