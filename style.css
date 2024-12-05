@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin: 60px;
+  background-color: #000;
+  border-radius: 5px;
+}
+.container #result{
+  color:#fff;
+  text-align: right;
+  padding:5px 10px;
+  font-size: 1.5rem;
+}
+.container form{
+  display: grid;
+  gap:5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "result result result result"
+  ac plus-mons pourcent div
+  sept huit neuf product
+  quatre cinq six moins
+  un deux trois plus
+  zero zero point egale;
+  
+}
